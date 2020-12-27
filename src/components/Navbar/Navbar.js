@@ -8,14 +8,16 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar_logo">
-        <img src={Logo} alt="logo" />
+        <a href="/">
+          <img src={Logo} alt="logo" />
+        </a>
       </div>
 
       <div className="navbar_links">
-        <a>About</a>
-        <a>Events</a>
-        <a>Join Us</a>
-        <a>Contact</a>
+        <a href="/about">About</a>
+        <a href="/events">Events</a>
+        <a href="/joinus">Join Us</a>
+        <a href="/contact">Contact</a>
       </div>
     </div>
   );

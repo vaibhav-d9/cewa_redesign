@@ -17,3 +17,11 @@
   display: flex;
   justify-content: space-evenly;
 }
+.navbar_links a {
+  text-decoration: none;
+  color: rgb(26, 26, 26);
+  font-weight: 500;
+}
+.navbar_links a:hover {
+  color: rgba(255, 255, 255, 0.726);
+}
