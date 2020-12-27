@@ -1,0 +1,25 @@
+.recentEvents {
+  width: 60%;
+  margin: -30px auto;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 0px 25px -11px rgba(71, 71, 71, 0.6);
+}
+.recentevents_header {
+  font-size: 20px;
+  color: #0f0f0f;
+}
+.subHeader {
+  color: rgb(160, 160, 160);
+  font-size: 12px;
+  font-weight: 600;
+}
+.recentEventsTop {
+  display: flex;
+  justify-content: space-between;
+}
+.viewAll {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(160, 160, 160);
+}

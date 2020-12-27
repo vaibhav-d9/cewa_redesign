@@ -1,0 +1,23 @@
+.ourVision {
+  width: 100%;
+  margin: 50px 50px 0 70px;
+}
+.ourVision_header {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0f0f0f;
+}
+.ourVision_para1 {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 25px;
+  color: #0f0f0f;
+}
+.ourVision_para2 {
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 25px;
+  color: #0f0f0f;
+}

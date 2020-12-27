@@ -2,22 +2,22 @@ import React from "react";
 
 import "./Navbar.css";
 import Logo from "../../CEWAlogo.png";
-import { Link as a } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar_logo">
-        <a href="/">
+        <Link to="/">
           <img src={Logo} alt="logo" />
-        </a>
+        </Link>
       </div>
 
       <div className="navbar_links">
-        <a href="/about">About</a>
-        <a href="/events">Events</a>
-        <a href="/joinus">Join Us</a>
-        <a href="/contact">Contact</a>
+        <Link to="/about">About</Link>
+        <Link to="/events">Events</Link>
+        <Link to="/joinus">Join Us</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </div>
   );

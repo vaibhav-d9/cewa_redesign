@@ -1,0 +1,9 @@
+.home .section1 {
+  display: flex;
+}
+.recentEvents_container {
+  width: 50%;
+}
+.ourVision_container {
+  width: 50%;
+}
