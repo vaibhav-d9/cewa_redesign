@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Banner/Banner";
 import OurVision from "../OurVision/OurVision";
 import RecentEvents from "../RecentEvents/RecentEvents";
+import WhatDrivesUs from "../WhatDrivesUs/WhatDrivesUs";
 
 import "./Home.css";
 
@@ -19,6 +20,8 @@ function Home() {
           <RecentEvents />
         </div>
       </div>
+
+      <WhatDrivesUs />
     </div>
   );
 }

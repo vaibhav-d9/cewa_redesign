@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./WhatDrivesUs.css";
+
 function WhatDrivesUs() {
   return (
     <div className="whatDrivesUs">
@@ -28,7 +30,7 @@ function WhatDrivesUs() {
         </li>
       </ul>
 
-      <p>
+      <p className="whatDriveUs_para">
         There’s no doubt that India’s at-risk children from the lower sections
         are to be rescued from these chains, holding them back from a promising
         future. This is what motivates us to further spread our reach and bestow
