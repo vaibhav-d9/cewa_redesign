@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../Banner/Banner";
+import FeedbackForm from "../FeedbackForm/FeedbackForm";
 import OurVision from "../OurVision/OurVision";
 import RecentEvents from "../RecentEvents/RecentEvents";
 import WhatDrivesUs from "../WhatDrivesUs/WhatDrivesUs";
@@ -22,6 +23,16 @@ function Home() {
       </div>
 
       <WhatDrivesUs />
+
+      <div className="feedbackForm_container">
+        <div className="feedbackFormContainer_left">
+          <h1>Drop us a message!</h1>
+          <p>We will get back to you..</p>
+        </div>
+        <div className="feedbackFormContainer_right">
+          <FeedbackForm />
+        </div>
+      </div>
     </div>
   );
 }

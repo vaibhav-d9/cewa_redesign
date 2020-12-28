@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import ContactHeader from "./components/ContactHeader/ContactHeader";
 import Events from "./components/Events/Events";
+import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import JoinUs from "./components/JoinUs/JoinUs";
 import Navbar from "./components/Navbar/Navbar";
@@ -36,6 +37,8 @@ function App() {
             <Contact />
           </Route>
         </Switch>
+
+        <Footer />
       </Router>
     </div>
   );

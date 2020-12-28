@@ -1,0 +1,52 @@
+.feedbackForm {
+  background-color: white;
+  box-shadow: 0px 0px 25px -11px rgba(71, 71, 71, 0.6);
+  padding: 20px;
+}
+.name_input {
+  display: flex;
+  align-items: center;
+}
+.firstname_input,
+.lastname_input,
+.email_input,
+.message_input {
+  display: flex;
+  flex-direction: column;
+}
+.feedbackForm input,
+.feedbackForm textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 5px;
+}
+.firstname_input,
+.lastname_input {
+  width: 50%;
+}
+.lastname_input {
+  padding-left: 10px;
+}
+.firstname_input {
+  padding-right: 10px;
+}
+.email_input,
+.message_input {
+  margin-top: 20px;
+}
+.feedbackForm button {
+  padding: 7px;
+  margin: 20px auto 0 auto;
+  background-color: rgb(236, 95, 30);
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  width: 6rem;
+  cursor: pointer;
+}
+.feedbackForm label {
+  font-size: 16px;
+  font-weight: 500;
+}

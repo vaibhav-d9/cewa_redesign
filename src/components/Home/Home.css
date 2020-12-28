@@ -7,3 +7,22 @@
 .ourVision_container {
   width: 50%;
 }
+.feedbackForm_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  width: 60%;
+  margin: 10rem auto 0 auto;
+}
+.feedbackForm_container h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.feedbackForm_container p {
+  font-weight: 500;
+  color: rgb(190, 190, 190);
+  margin-top: 10px;
+}
+.feedbackFormContainer_left {
+  margin-top: 40px;
+}
