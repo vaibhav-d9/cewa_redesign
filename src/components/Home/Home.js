@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../Banner/Banner";
+import BottomBanner from "../BottomBanner/BottomBanner";
 import FeedbackForm from "../FeedbackForm/FeedbackForm";
 import OurVision from "../OurVision/OurVision";
 import RecentEvents from "../RecentEvents/RecentEvents";
@@ -33,6 +34,8 @@ function Home() {
           <FeedbackForm />
         </div>
       </div>
+
+      <BottomBanner />
     </div>
   );
 }
