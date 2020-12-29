@@ -1,0 +1,15 @@
+.whatWeDo_header {
+  font-size: 35px;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  text-align: center;
+}
+.whatWeDo_para {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 20px;
+  padding: 0 50px;
+}
+.about {
+  margin-top: 70px;
+}

@@ -1,0 +1,34 @@
+.founders {
+  margin-top: 6rem;
+  margin-bottom: 50px;
+  padding: 0 100px;
+}
+.founders_header {
+  color: #0f0f0f;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.founders_main {
+  display: flex;
+  align-items: center;
+}
+.founders_prakhar,
+.founders_harsha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.founders_name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.founders_quote {
+  line-height: 20px;
+  padding: 0 20px;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(92, 92, 92);
+}
