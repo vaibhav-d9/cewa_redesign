@@ -1,5 +1,4 @@
 .events {
-  margin-top: 5rem;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -9,12 +8,14 @@
   font-size: 30px;
   font-weight: 700;
   margin-top: 50px;
+  color: rgb(27, 27, 27);
 }
 .event_desc {
   margin-top: 10px;
 }
 .event_desc li {
   margin-top: 10px;
+  color: rgb(27, 27, 27);
 }
 .slider {
   margin-top: 20px;

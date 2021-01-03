@@ -1,6 +1,6 @@
 .whatWeDo_header {
   font-size: 35px;
-  color: #0f0f0f;
+  color: rgb(27, 27, 27);
   text-transform: uppercase;
   text-align: center;
 }
@@ -11,5 +11,5 @@
   padding: 0 50px;
 }
 .about {
-  margin-top: 70px;
+  margin-top: 20px;
 }

@@ -6,8 +6,8 @@ export const appSlice = createSlice({
     navbarChange: false,
   },
   reducers: {
-    changeNavbar: (state) => {
-      state.navbarChange = !state.navbarChange;
+    changeNavbar: (state, action) => {
+      state.navbarChange = action.payload;
     },
   },
 });

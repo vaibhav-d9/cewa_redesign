@@ -8,6 +8,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 35px;
+  color: rgb(27, 27, 27);
 }
 .founders_main {
   display: flex;
@@ -31,4 +32,11 @@
   text-align: center;
   font-size: 16px;
   color: rgb(92, 92, 92);
+}
+.desig {
+  color: rgb(92, 92, 92);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 5px;
 }

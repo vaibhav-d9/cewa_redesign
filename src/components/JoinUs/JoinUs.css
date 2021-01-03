@@ -1,6 +1,5 @@
 .joinUs {
   display: flex;
-  margin-top: 5rem;
   height: calc(100vh - 7.5rem);
 }
 .joinUs_left {
@@ -21,6 +20,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 30px;
+  color: rgb(27, 27, 27);
 }
 .membershipForm_field {
   display: flex;
@@ -39,6 +39,7 @@
 .membershipForm_field label {
   width: 10rem;
   font-weight: 500;
+  color: rgb(27, 27, 27);
 }
 .joinUs_right form {
   display: flex;

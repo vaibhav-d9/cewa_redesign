@@ -13,8 +13,6 @@ function JoinUs() {
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
 
-  console.log(window.location.href);
-
   const handleMembershipFormSubmit = (e) => {
     e.preventDefault();
   };

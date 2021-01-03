@@ -27,7 +27,7 @@ function Home() {
 
       <div className="feedbackForm_container">
         <div className="feedbackFormContainer_left">
-          <h1>Drop us a message!</h1>
+          <h1 className="feedbackForm_Header">Drop us a message!</h1>
           <p>We will get back to you..</p>
         </div>
         <div className="feedbackFormContainer_right">
