@@ -54,3 +54,12 @@
   font-size: 16px;
   font-weight: 500;
 }
+.feedbackFormValidationError {
+  color: red;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.feedbackForm label small {
+  margin-left: 2px;
+  color: red;
+}
