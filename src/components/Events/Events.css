@@ -28,3 +28,12 @@
   height: 15rem;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 454px) {
+  .event_header {
+    font-size: 22px;
+  }
+  .event_desc li {
+    font-size: 14px;
+  }
+}

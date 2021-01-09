@@ -67,3 +67,41 @@
   color: rgba(167, 167, 167, 0.7);
   letter-spacing: 2px;
 }
+
+@media only screen and (max-width: 855px) {
+  .joinUs_right {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .joinUs_left {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .membershipForm_header {
+    font-size: 30px;
+  }
+  .joinUs {
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 548px) {
+  .membershipForm_field input,
+  .membershipForm_field select {
+    width: 15rem;
+  }
+}
+@media only screen and (max-width: 454px) {
+  .membershipForm_header {
+    font-size: 22px;
+  }
+  .membershipForm_field label {
+    font-size: 14px;
+    width: 7rem;
+  }
+  .membershipForm_field input,
+  .membershipForm_field select {
+    width: 13rem;
+  }
+}

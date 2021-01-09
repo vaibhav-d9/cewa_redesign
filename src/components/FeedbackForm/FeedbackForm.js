@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import SweetAlert from "sweetalert-react";
+import swal from "@sweetalert/with-react";
 
 import "./FeedbackForm.css";
+import "sweetalert/dist/sweetalert.css";
 
 function FeedbackForm() {
   const [firstname, setFirstname] = useState("");
@@ -13,6 +16,7 @@ function FeedbackForm() {
   const [lastnameValidationError, setLastnameValidationError] = useState(false);
   const [emailValidationError, setEmailValidationError] = useState(false);
   const [messageValidationError, setMessageValidationError] = useState(false);
+  const [show, setShow] = useState(false);
 
   const handleFeedbackSubmit = (e) => {
     e.preventDefault();
@@ -50,6 +54,22 @@ function FeedbackForm() {
       setLastname("");
       setEmail("");
       setMessage("");
+
+      fetch("http://localhost:5000/feedback", {
+        method: "POST",
+        body: {
+          firstname,
+          lastname,
+          email,
+          message,
+        },
+      });
+
+      // swal(
+      //   "Thank You!",
+      //   "Your message was sent to us successfully.",
+      //   "success"
+      // );
     }
   };
 
@@ -61,6 +81,7 @@ function FeedbackForm() {
             <label for="firstname">
               Firstname<small>*</small>
             </label>
+
             <input
               type="text"
               name="firstname"

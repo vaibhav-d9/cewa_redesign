@@ -1,7 +1,6 @@
 .founders {
   margin-top: 6rem;
   margin-bottom: 50px;
-  padding: 0 100px;
 }
 .founders_header {
   color: #0f0f0f;
@@ -13,13 +12,11 @@
 .founders_main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
 }
-.founders_prakhar,
-.founders_harsha {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .founders_name {
   font-weight: 600;
   font-size: 18px;
@@ -39,4 +36,65 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 5px;
+}
+.founders_prakhar,
+.founders_harsha {
+  border-top: 3px solid rgb(236, 95, 30);
+  margin: 30px auto;
+  box-shadow: 0px 0px 25px -11px rgba(71, 71, 71, 0.6);
+  width: 25rem;
+  border-radius: 3px;
+  display: grid;
+  place-items: center;
+  padding-bottom: 50px;
+  height: 22rem;
+  min-width: 15rem;
+}
+.founders_img {
+  width: 70%;
+}
+.foundersImg_container {
+  display: grid;
+  place-items: center;
+}
+.founders_prakhar {
+  margin-right: 30px;
+}
+.founders_harsha {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .founders_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .founders_prakhar,
+  .founders_harsha {
+    margin: 30px auto;
+    width: 20rem;
+  }
+  .founders_header {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 454px) {
+  .founders_prakhar,
+  .founders_harsha {
+    margin: 30px auto;
+    width: 15rem;
+  }
+  .founders_name {
+    font-size: 15px;
+  }
+  .desig {
+    font-size: 12px;
+  }
+  .founders_header {
+    font-size: 22px;
+  }
+  .founders_quote {
+    font-size: 14px;
+  }
 }
