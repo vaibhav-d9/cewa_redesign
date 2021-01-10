@@ -21,3 +21,24 @@
   line-height: 25px;
   color: #0f0f0f;
 }
+@media only screen and (max-width: 882px) {
+  .ourVision {
+    margin: 0;
+    margin-top: 5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ourVision_header {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 454px) {
+  .ourVision_header {
+    font-size: 22px;
+  }
+  .ourVision_para1,
+  .ourVision_para2 {
+    font-size: 14px;
+  }
+}
