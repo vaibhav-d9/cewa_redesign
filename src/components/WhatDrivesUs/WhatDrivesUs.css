@@ -23,3 +23,23 @@
   line-height: 25px;
   margin-top: 25px;
 }
+
+@media only screen and (max-width: 768px) {
+  .whatDrivesUs_header {
+    font-size: 30px;
+  }
+  .whatDrivesUs {
+    margin-top: 5rem;
+  }
+}
+@media only screen and (max-width: 454px) {
+  .whatDrivesUs_header {
+    font-size: 22px;
+  }
+  .whatDrivesUs li {
+    font-size: 14px;
+  }
+  .whatDriveUs_para {
+    font-size: 14px;
+  }
+}
