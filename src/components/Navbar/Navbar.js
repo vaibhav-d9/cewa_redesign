@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Navbar.css";
 import Logo from "../../CEWAlogo.png";
 import { Link } from "react-router-dom";
+import MenuIcon from "@material-ui/icons/Menu";
 import { changeNavbar, selectApp } from "../../features/appSlice";
 
 function Navbar() {
@@ -38,6 +39,10 @@ function Navbar() {
         <Link to="/joinus" onClick={handleNavbarChange}>
           Join Us
         </Link>
+      </div>
+
+      <div className="navbar_menu">
+        <MenuIcon />
       </div>
     </div>
   );

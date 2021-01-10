@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Banner from "../Banner/Banner";
+import BannerMobile from "../BannerMobile/BannerMobile";
 import BottomBanner from "../BottomBanner/BottomBanner";
 import FeedbackForm from "../FeedbackForm/FeedbackForm";
 import OurVision from "../OurVision/OurVision";
@@ -9,9 +10,21 @@ import WhatDrivesUs from "../WhatDrivesUs/WhatDrivesUs";
 import "./Home.css";
 
 function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    detectWindowSize();
+  }, []);
+
+  function detectWindowSize() {
+    window.innerWidth <= 882 ? setIsMobile(true) : setIsMobile(false);
+  }
+
+  window.onresize = detectWindowSize;
+
   return (
     <div className="home">
-      <Banner />
+      {isMobile ? <BannerMobile /> : <Banner />}
 
       <div className="section1">
         <div className="ourVision_container">

@@ -38,6 +38,10 @@
   box-shadow: 0px 2px 18px -3px rgba(41, 41, 41, 0.15);
 }
 
+.navbar_menu {
+  display: none;
+}
+
 .navbar_Links {
   flex: 0.5;
   display: flex;
@@ -53,4 +57,21 @@
 }
 .navbar_Links a:focus {
   color: rgb(236, 95, 30);
+}
+@media only screen and (max-width: 768px) {
+  .navbar_Links,
+  .navbar_links {
+    display: none;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar_menu {
+    display: block;
+  }
+  .navbar_menu .MuiSvgIcon-root {
+    color: white;
+    margin-right: 20px;
+    font-size: 30px;
+  }
 }

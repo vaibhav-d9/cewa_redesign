@@ -1,0 +1,65 @@
+.bannerMobile {
+  position: relative;
+  z-index: -1;
+}
+.bannerMobile img {
+  width: 100%;
+}
+.bannerMobile_overlay {
+  position: absolute;
+  top: 30%;
+}
+.bannerMobile_colorOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 115, 0, 0.486);
+}
+.bannerMobile_img {
+  position: relative;
+}
+.bannerMobile_overlay h1 {
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #070707c2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bannerMobile_overlay h2 {
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: rgba(255, 255, 255, 0.829);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bannerMobile_quote {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  margin-top: 3rem;
+  padding: 0 30px;
+}
+@media only screen and (max-width: 555px) {
+  .bannerMobile_overlay h1 {
+    font-size: 30px;
+  }
+  .bannerMobile_overlay h2 {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .bannerMobile_quote {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .bannerMobile_overlay h2 {
+    font-size: 40px;
+  }
+  .bannerMobile_overlay h1 {
+    font-size: 20px;
+  }
+}
