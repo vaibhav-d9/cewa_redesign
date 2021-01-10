@@ -4,6 +4,7 @@
   background-color: white;
   padding: 15px;
   box-shadow: 0px 0px 25px -11px rgba(71, 71, 71, 0.6);
+  min-width: 300px;
 }
 .recentevents_header {
   font-size: 20px;
@@ -22,4 +23,10 @@
   font-size: 12px;
   font-weight: 500;
   color: rgb(160, 160, 160);
+}
+
+@media only screen and (max-width: 768px) {
+  .recentevents_header {
+    font-size: 18px;
+  }
 }
