@@ -24,3 +24,19 @@
   font-style: italic;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 660px) {
+  .bottomBanner_quote {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .bottomBanner_quote {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .bottomBanner_quote {
+    font-size: 22px;
+  }
+}
