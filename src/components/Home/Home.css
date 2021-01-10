@@ -29,3 +29,38 @@
 .feedbackForm_header {
   color: rgb(27, 27, 27);
 }
+
+@media only screen and (max-width: 1080px) {
+  .feedbackForm_container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .feedbackForm_container {
+    flex-direction: column;
+  }
+  .feedbackFormContainer_right {
+    margin-top: 30px;
+  }
+  .feedbackForm_Header {
+    font-size: 30px !important;
+    text-align: center;
+  }
+  .feedbackFormContainer_left p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .feedbackForm_Header {
+    font-size: 22px !important;
+    text-align: center;
+  }
+  .feedbackFormContainer_left p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .feedbackForm_container {
+    width: 90%;
+  }
+}
