@@ -64,3 +64,40 @@
 .founders_harsha .foundersHarsha_main {
   padding-left: 30px;
 }
+
+@media only screen and (max-width: 1080px) {
+  .foundersImg_container {
+    width: 100rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .founders_prakhar,
+  .founders_harsha {
+    flex-direction: column;
+  }
+  .foundersImg_container {
+    width: 100%;
+  }
+  .foundersHarsha_main {
+    display: grid;
+    place-items: center;
+  }
+  .foundersPrakhar_main {
+    display: grid;
+    place-items: center;
+    padding-right: 0;
+  }
+  .foundersPrakhar_main .MuiSvgIcon-root {
+    right: auto;
+  }
+  .founders {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .founders_quote {
+    font-size: 14px;
+  }
+}
