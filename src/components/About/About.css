@@ -2,27 +2,39 @@
   font-size: 35px;
   color: rgb(27, 27, 27);
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 30px;
 }
 .whatWeDo_para {
   font-size: 16px;
   line-height: 25px;
   margin-top: 20px;
-  padding: 0 50px;
 }
 .about {
   margin-top: 20px;
+}
+.whatWeDo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 882px) {
+  .whatWeDo {
+    margin-top: 5rem;
+    width: 95%;
+  }
+  .whatWeDo_header {
+    text-align: center;
+  }
+  .whatWeDo_para {
+    padding: 0 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .whatWeDo_header {
     font-size: 30px;
   }
-  .whatWeDo_para {
-    padding: 0 20px;
-  }
 }
+
 @media only screen and (max-width: 454px) {
   .whatWeDo_header {
     font-size: 22px;

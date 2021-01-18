@@ -1,6 +1,6 @@
 .ourVision {
-  width: 100%;
-  margin: 50px 50px 0 70px;
+  width: 80%;
+  margin: 6rem auto 0 auto;
 }
 .ourVision_header {
   text-transform: uppercase;
@@ -8,6 +8,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   color: rgb(27, 27, 27);
+  text-align: center;
 }
 .ourVision_para1 {
   font-size: 16px;
@@ -23,8 +24,7 @@
 }
 @media only screen and (max-width: 882px) {
   .ourVision {
-    margin: 0;
-    margin-top: 5rem;
+    margin: 5rem auto 0 auto;
   }
 
   .ourVision_header {
@@ -44,5 +44,8 @@
   .ourVision_para1,
   .ourVision_para2 {
     font-size: 14px;
+  }
+  .ourVision {
+    margin-top: 2rem;
   }
 }

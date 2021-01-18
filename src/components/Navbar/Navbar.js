@@ -21,29 +21,19 @@ function Navbar() {
   return (
     <div className={homeScreen ? "navbar_" : "navbar"}>
       <div className="navbar_logo">
-        <Link to="/">
+        <Link to="/" onClick={handleHomeNavigation}>
           <img src={Logo} alt="logo" />
         </Link>
       </div>
 
-      <div className={homeScreen ? "navbar_Links" : "navbar_links"}>
-        <Link to="/" onClick={handleHomeNavigation}>
-          Home
-        </Link>
-        <Link to="/about" onClick={handleNavbarChange}>
-          About
-        </Link>
+      {/* <div className={homeScreen ? "navbar_Links" : "navbar_links"}>
         <Link to="/events" onClick={handleNavbarChange}>
           Events
         </Link>
         <Link to="/joinus" onClick={handleNavbarChange}>
           Join Us
         </Link>
-      </div>
-
-      <div className="navbar_menu">
-        <MenuIcon />
-      </div>
+      </div> */}
     </div>
   );
 }

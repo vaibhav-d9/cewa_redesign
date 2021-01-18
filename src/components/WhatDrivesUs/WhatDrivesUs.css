@@ -2,6 +2,8 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 10rem;
+  display: grid;
+  place-items: center;
 }
 .whatDrivesUs_header {
   text-transform: uppercase;
@@ -22,6 +24,20 @@
 .whatDriveUs_para {
   line-height: 25px;
   margin-top: 25px;
+}
+.whatDrivesUs a {
+  background-color: rgb(236, 95, 30);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 20px auto;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  width: 8rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {

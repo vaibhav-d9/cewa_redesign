@@ -15,12 +15,13 @@
 .navbar_links {
   flex: 0.5;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 .navbar_links a {
   text-decoration: none;
   color: rgb(58, 58, 58);
   font-weight: 600;
+  margin-right: 70px;
 }
 .navbar_links a:hover {
   color: rgba(255, 255, 255, 0.726);
@@ -45,7 +46,7 @@
 .navbar_Links {
   flex: 0.5;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: flex-end; */
 }
 .navbar_Links a {
   text-decoration: none;

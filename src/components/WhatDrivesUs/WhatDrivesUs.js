@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./WhatDrivesUs.css";
 
@@ -38,6 +39,7 @@ function WhatDrivesUs() {
         all forms of exploitation and discrimination, where everyone has equal
         opportunities to perceive their potential.
       </p>
+      <Link to="/joinus">Join Us</Link>
     </div>
   );
 }

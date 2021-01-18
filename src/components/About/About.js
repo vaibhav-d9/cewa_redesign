@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="about">
       <div className="whatWeDo">
-        <h1 className="whatWeDo_header">What we do</h1>
+        <h1 className="whatWeDo_header">About Us</h1>
         <p className="whatWeDo_para">
           Children Endorse Welfare Association(CEWA) is a non-profit
           organization which focuses on the sustainable development of the
@@ -23,7 +23,7 @@ function About() {
         </p>
       </div>
 
-      <Founders />
+      {/* <Founders /> */}
     </div>
   );
 }

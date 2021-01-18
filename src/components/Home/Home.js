@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import About from "../About/About";
 import Banner from "../Banner/Banner";
 import BannerMobile from "../BannerMobile/BannerMobile";
 import BottomBanner from "../BottomBanner/BottomBanner";
 import FeedbackForm from "../FeedbackForm/FeedbackForm";
+import Founders from "../Founders/Founders";
 import OurVision from "../OurVision/OurVision";
 import RecentEvents from "../RecentEvents/RecentEvents";
 import WhatDrivesUs from "../WhatDrivesUs/WhatDrivesUs";
@@ -28,7 +30,7 @@ function Home() {
 
       <div className="section1">
         <div className="ourVision_container">
-          <OurVision />
+          <About />
         </div>
 
         <div className="recentEvents_container">
@@ -37,6 +39,10 @@ function Home() {
       </div>
 
       <WhatDrivesUs />
+
+      <OurVision />
+
+      <Founders />
 
       <div className="feedbackForm_container">
         <div className="feedbackFormContainer_left">
