@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import SweetAlert from "sweetalert-react";
-import swal from "@sweetalert/with-react";
 
 import "./FeedbackForm.css";
-import "sweetalert/dist/sweetalert.css";
+import Button from "@material-ui/core/Button";
 
 function FeedbackForm() {
   const [firstname, setFirstname] = useState("");
@@ -64,12 +62,6 @@ function FeedbackForm() {
           message,
         },
       });
-
-      // swal(
-      //   "Thank You!",
-      //   "Your message was sent to us successfully.",
-      //   "success"
-      // );
     }
   };
 
@@ -147,7 +139,7 @@ function FeedbackForm() {
           )}
         </div>
 
-        <button onClick={handleFeedbackSubmit}>Submit</button>
+        <Button onClick={handleFeedbackSubmit}>Submit</Button>
       </form>
     </div>
   );

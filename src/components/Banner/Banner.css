@@ -39,6 +39,39 @@
   height: 100%;
   object-fit: cover;
 }
+.joinus_button {
+  position: absolute;
+  padding: 10px;
+  top: 470px;
+  left: 380px;
+  /* background-color: whitesmoke; */
+  background-color: rgb(236, 95, 30);
+  border: 2px solid rgb(236, 95, 30);
+  color: white;
+  outline: none;
+  font-weight: 500;
+  width: 10rem;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.joinus_button:hover {
+  position: absolute;
+  padding: 10px;
+  top: 470px;
+  left: 380px;
+  background-color: rgb(236, 95, 30);
+  border: 2px solid rgb(236, 95, 30);
+  color: white;
+  outline: none;
+  font-weight: 500;
+  width: 10rem;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 700;
+  box-shadow: 0px 2px 22px -3px rgba(255, 60, 0, 1);
+}
 
 .overlay {
   width: 100%;

@@ -39,7 +39,19 @@
   margin-top: 20px;
 }
 .feedbackForm button {
-  padding: 7px;
+  padding: 6px;
+  margin: 20px auto 0 auto;
+  background-color: rgb(236, 95, 30);
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  width: 6rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.feedbackForm button:hover {
+  padding: 6px;
   margin: 20px auto 0 auto;
   background-color: rgb(236, 95, 30);
   color: white;

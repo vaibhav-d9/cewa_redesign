@@ -1,7 +1,7 @@
+import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
+
 import ContactHeader from "./components/ContactHeader/ContactHeader";
 import Events from "./components/Events/Events";
 import Footer from "./components/Footer/Footer";
@@ -14,15 +14,11 @@ function App() {
     <div className="app">
       <Router>
         <ContactHeader />
-        <Navbar />
 
         <Switch>
           <Route exact path="/">
+            <Navbar />
             <Home />
-          </Route>
-
-          <Route exact path="/about">
-            <About />
           </Route>
 
           <Route exact path="/events">
@@ -31,10 +27,6 @@ function App() {
 
           <Route exact path="/joinus">
             <JoinUs />
-          </Route>
-
-          <Route exact path="/contact">
-            <Contact />
           </Route>
         </Switch>
 

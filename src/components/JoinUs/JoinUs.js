@@ -1,7 +1,8 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./JoinUs.css";
+import Logo from "../../CEWAlogo.png";
 
 function JoinUs() {
   const [name, setName] = useState("");
@@ -12,6 +13,10 @@ function JoinUs() {
   const [profession, setProfession] = useState("");
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleMembershipFormSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +32,11 @@ function JoinUs() {
         />
       </div>
       <div className="joinUs_right">
+        <div className="logo">
+          <Link to="/">
+            <img src={Logo} alt="logo" />
+          </Link>
+        </div>
         <h1 className="membershipForm_header">Become a member</h1>
         <p className="membershipForm_subheader">Be the change</p>
         <form className="membershipForm">

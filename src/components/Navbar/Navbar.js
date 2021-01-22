@@ -4,14 +4,10 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Navbar.css";
 import Logo from "../../CEWAlogo.png";
 import { Link } from "react-router-dom";
-import MenuIcon from "@material-ui/icons/Menu";
 import { changeNavbar, selectApp } from "../../features/appSlice";
 
 function Navbar() {
   const dispatch = useDispatch();
-  const handleNavbarChange = () => {
-    dispatch(changeNavbar(true));
-  };
   const handleHomeNavigation = () => {
     dispatch(changeNavbar(false));
   };
@@ -25,15 +21,6 @@ function Navbar() {
           <img src={Logo} alt="logo" />
         </Link>
       </div>
-
-      {/* <div className={homeScreen ? "navbar_Links" : "navbar_links"}>
-        <Link to="/events" onClick={handleNavbarChange}>
-          Events
-        </Link>
-        <Link to="/joinus" onClick={handleNavbarChange}>
-          Join Us
-        </Link>
-      </div> */}
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./WhatDrivesUs.css";
+import Button from "@material-ui/core/Button";
 
 function WhatDrivesUs() {
   return (
@@ -39,7 +40,9 @@ function WhatDrivesUs() {
         all forms of exploitation and discrimination, where everyone has equal
         opportunities to perceive their potential.
       </p>
-      <Link to="/joinus">Join Us</Link>
+      <Link to="/joinus">
+        <Button>Join Us</Button>
+      </Link>
     </div>
   );
 }

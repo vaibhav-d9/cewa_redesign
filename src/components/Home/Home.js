@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import About from "../About/About";
-import Banner from "../Banner/Banner";
-import BannerMobile from "../BannerMobile/BannerMobile";
-import BottomBanner from "../BottomBanner/BottomBanner";
-import FeedbackForm from "../FeedbackForm/FeedbackForm";
-import Founders from "../Founders/Founders";
-import OurVision from "../OurVision/OurVision";
-import RecentEvents from "../RecentEvents/RecentEvents";
-import WhatDrivesUs from "../WhatDrivesUs/WhatDrivesUs";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 
 import "./Home.css";
+const About = lazy(() => import("../About/About"));
+const Banner = lazy(() => import("../Banner/Banner"));
+const BannerMobile = lazy(() => import("../BannerMobile/BannerMobile"));
+const FeedbackForm = lazy(() => import("../FeedbackForm/FeedbackForm"));
+const Founders = lazy(() => import("../Founders/Founders"));
+const OurVision = lazy(() => import("../OurVision/OurVision"));
+const RecentEvents = lazy(() => import("../RecentEvents/RecentEvents"));
+const WhatDrivesUs = lazy(() => import("../WhatDrivesUs/WhatDrivesUs"));
+const BottomBanner = lazy(() => import("../BottomBanner/BottomBanner"));
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,35 +26,37 @@ function Home() {
 
   return (
     <div className="home">
-      {isMobile ? <BannerMobile /> : <Banner />}
+      <Suspense fallback={<p>Loading...</p>}>
+        {isMobile ? <BannerMobile /> : <Banner />}
 
-      <div className="section1">
-        <div className="ourVision_container">
-          <About />
+        <div className="section1">
+          <div className="ourVision_container">
+            <About />
+          </div>
+
+          <div className="recentEvents_container">
+            <RecentEvents />
+          </div>
         </div>
 
-        <div className="recentEvents_container">
-          <RecentEvents />
+        <WhatDrivesUs />
+
+        <OurVision />
+
+        <Founders />
+
+        <div className="feedbackForm_container">
+          <div className="feedbackFormContainer_left">
+            <h1 className="feedbackForm_Header">Drop us a message!</h1>
+            <p>We will get back to you..</p>
+          </div>
+          <div className="feedbackFormContainer_right">
+            <FeedbackForm />
+          </div>
         </div>
-      </div>
 
-      <WhatDrivesUs />
-
-      <OurVision />
-
-      <Founders />
-
-      <div className="feedbackForm_container">
-        <div className="feedbackFormContainer_left">
-          <h1 className="feedbackForm_Header">Drop us a message!</h1>
-          <p>We will get back to you..</p>
-        </div>
-        <div className="feedbackFormContainer_right">
-          <FeedbackForm />
-        </div>
-      </div>
-
-      <BottomBanner />
+        <BottomBanner />
+      </Suspense>
     </div>
   );
 }
