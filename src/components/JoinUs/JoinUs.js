@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./JoinUs.css";
 import Logo from "../../CEWAlogo.png";
+import Button from "@material-ui/core/Button";
 
 function JoinUs() {
   const [name, setName] = useState("");
@@ -13,6 +14,7 @@ function JoinUs() {
   const [profession, setProfession] = useState("");
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
+  const [disabled, setDisabled] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,6 +22,20 @@ function JoinUs() {
 
   const handleMembershipFormSubmit = (e) => {
     e.preventDefault();
+
+    fetch("http://localhost:5000/membership", {
+      method: "POST",
+      body: {
+        name,
+        email,
+        phone,
+        dob,
+        sex,
+        profession,
+        city,
+        country,
+      },
+    });
   };
 
   return (
@@ -45,6 +61,7 @@ function JoinUs() {
             <input
               type="text"
               name="name"
+              value={name}
               onChange={(e) => {
                 setName(e.target.value);
               }}
@@ -56,6 +73,7 @@ function JoinUs() {
             <input
               type="text"
               name="email"
+              value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
@@ -67,6 +85,7 @@ function JoinUs() {
             <input
               type="text"
               name="phone"
+              value={phone}
               onChange={(e) => {
                 setPhone(e.target.value);
               }}
@@ -78,6 +97,7 @@ function JoinUs() {
             <input
               type="date"
               name="dob"
+              value={dob}
               onChange={(e) => {
                 setDOB(e.target.value);
               }}
@@ -86,7 +106,11 @@ function JoinUs() {
 
           <div className="membershipForm_field">
             <label for="sex">Sex</label>
-            <select name="sex" onChange={(e) => setSex(e.target.value)}>
+            <select
+              name="sex"
+              onChange={(e) => setSex(e.target.value)}
+              value={sex}
+            >
               <option value="null">--Select--</option>
               <option value="M">M</option>
               <option value="F">F</option>
@@ -99,6 +123,7 @@ function JoinUs() {
             <input
               type="text"
               name="profession"
+              value={profession}
               onChange={(e) => {
                 setProfession(e.target.value);
               }}
@@ -110,6 +135,7 @@ function JoinUs() {
             <input
               type="text"
               name="city"
+              value={city}
               onChange={(e) => {
                 setCity(e.target.value);
               }}
@@ -121,13 +147,14 @@ function JoinUs() {
             <input
               type="text"
               name="country"
+              value={country}
               onChange={(e) => {
                 setCountry(e.target.value);
               }}
             />
           </div>
 
-          <button onClick={handleMembershipFormSubmit}>Submit</button>
+          <Button onClick={handleMembershipFormSubmit}>Submit</Button>
         </form>
       </div>
     </div>

@@ -14,7 +14,6 @@ function FeedbackForm() {
   const [lastnameValidationError, setLastnameValidationError] = useState(false);
   const [emailValidationError, setEmailValidationError] = useState(false);
   const [messageValidationError, setMessageValidationError] = useState(false);
-  const [show, setShow] = useState(false);
 
   const handleFeedbackSubmit = (e) => {
     e.preventDefault();
@@ -48,11 +47,7 @@ function FeedbackForm() {
     ) {
       return;
     } else {
-      setFirstname("");
-      setLastname("");
-      setEmail("");
-      setMessage("");
-
+      console.log(firstname, lastname, email, message);
       fetch("http://localhost:5000/feedback", {
         method: "POST",
         body: {
@@ -62,6 +57,11 @@ function FeedbackForm() {
           message,
         },
       });
+
+      setFirstname("");
+      setLastname("");
+      setEmail("");
+      setMessage("");
     }
   };
 

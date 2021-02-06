@@ -9,10 +9,13 @@
 }
 .feedbackForm_container {
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  width: 60%;
+  width: 100%;
+  padding: 40px 12rem;
   margin: 10rem auto 0 auto;
+  align-items: center;
+  /* background-color: rgba(255, 115, 0, 0.7); */
+  background-color: whitesmoke;
 }
 .feedbackForm_container h1 {
   text-transform: uppercase;
@@ -24,10 +27,44 @@
   margin-top: 10px;
 }
 .feedbackFormContainer_left {
-  margin-top: 40px;
+  /* margin-top: 40px; */
+  flex: 0.6;
 }
-.feedbackForm_header {
-  color: rgb(27, 27, 27);
+.feedbackFormContainer_right {
+  flex: 0.3;
+  padding: 20px;
+}
+.feedbackFormRight_header {
+  font-size: 20px;
+  margin-left: 10px;
+  text-align: justify;
+}
+.feedbackFormContainer_right a {
+  text-decoration: none;
+  color: rgb(236, 95, 30);
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.feedbackFormContainer_right a p {
+  font-size: 14px;
+  margin-left: 10px;
+  color: rgb(31, 31, 31);
+}
+
+.feedbackFormContainer_social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+  margin-top: 30px;
+}
+.feedbackFormContainer_right .MuiSvgIcon-root {
+  font-size: 26px;
+}
+
+.feedbackFormContainer_social .MuiSvgIcon-root {
+  color: rgb(236, 95, 30);
 }
 
 @media only screen and (max-width: 1080px) {

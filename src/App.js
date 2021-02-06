@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="app">
       <Router>
-        <ContactHeader />
+        {/* <ContactHeader /> */}
 
         <Switch>
           <Route exact path="/">

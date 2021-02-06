@@ -1,6 +1,16 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+import PhoneIcon from "@material-ui/icons/Phone";
+import EmailIcon from "@material-ui/icons/Email";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+
 const About = lazy(() => import("../About/About"));
 const Banner = lazy(() => import("../Banner/Banner"));
 const BannerMobile = lazy(() => import("../BannerMobile/BannerMobile"));
@@ -47,11 +57,38 @@ function Home() {
 
         <div className="feedbackForm_container">
           <div className="feedbackFormContainer_left">
-            <h1 className="feedbackForm_Header">Drop us a message!</h1>
-            <p>We will get back to you..</p>
+            <h1 className="feedbackForm_Header">get in touch..</h1>
+            <FeedbackForm />
           </div>
           <div className="feedbackFormContainer_right">
-            <FeedbackForm />
+            <p className="feedbackFormRight_header">Reach out to us</p>
+
+            <div className="feedbackFormContainer_address">
+              <a>
+                <LocationOnIcon />
+                <p>653/A, Naiyyar Colony, Gonda pin - 271001</p>
+              </a>
+            </div>
+            <div className="feedbackFormContainer_phone">
+              <a href="tel:9870233978">
+                <PhoneIcon />
+                <p>9870233978</p>
+              </a>
+            </div>
+            <div className="feedbackFormContainer_email">
+              <a href="mailto:ngocewa@gmail.com">
+                <EmailIcon />
+                <p>ngocewa@gmail.com</p>
+              </a>
+            </div>
+
+            <div className="feedbackFormContainer_social">
+              <FacebookIcon />
+              <TwitterIcon />
+              <InstagramIcon />
+              <LinkedInIcon />
+              <YouTubeIcon />
+            </div>
           </div>
         </div>
 

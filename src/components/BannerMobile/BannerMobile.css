@@ -36,12 +36,47 @@
   text-align: center;
 }
 
+.bannerMobile_overlay a {
+  width: 8rem;
+  margin: 0 auto;
+}
+
 .bannerMobile_quote {
   color: white;
   text-align: center;
   font-style: italic;
   margin-top: 3rem;
   padding: 0 30px;
+}
+.joinus_Button {
+  position: absolute;
+  padding: 5px;
+  background-color: rgb(236, 95, 30);
+  border: 2px solid rgb(236, 95, 30);
+  color: white;
+  outline: none;
+  font-weight: 500;
+  width: 8rem;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.joinus_Button:hover {
+  position: absolute;
+  padding: 5px;
+  background-color: rgb(236, 95, 30);
+  border: 2px solid rgb(236, 95, 30);
+  color: white;
+  outline: none;
+  font-weight: 500;
+  width: 8rem;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 @media only screen and (max-width: 555px) {
   .bannerMobile_overlay h1 {
