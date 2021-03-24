@@ -58,10 +58,10 @@ function FeedbackForm() {
         },
       });
 
-      setFirstname("");
-      setLastname("");
-      setEmail("");
-      setMessage("");
+      // setFirstname("");
+      // setLastname("");
+      // setEmail("");
+      // setMessage("");
     }
   };
 
