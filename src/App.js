@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-
+import Donate from "./components/Donate/Donate";
 import ContactHeader from "./components/ContactHeader/ContactHeader";
 import Events from "./components/Events/Events";
 import Footer from "./components/Footer/Footer";
@@ -27,6 +27,9 @@ function App() {
 
           <Route exact path="/joinus">
             <JoinUs />
+          </Route>
+          <Route exact path="/donate">
+            <Donate />
           </Route>
         </Switch>
 
