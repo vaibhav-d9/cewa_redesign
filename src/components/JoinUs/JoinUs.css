@@ -1,6 +1,6 @@
 .joinUs {
   display: flex;
-  height: calc(100vh - 12px);
+  height: calc(100vh - 55px);
 }
 .joinUs_left {
   height: 100%;
@@ -14,6 +14,7 @@
 }
 .joinUs_right {
   flex: 0.6;
+  padding-top: 50px;
 }
 .membershipForm_header {
   font-size: 35px;

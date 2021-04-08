@@ -48,11 +48,6 @@ function JoinUs() {
         />
       </div>
       <div className="joinUs_right">
-        <div className="logo">
-          <Link to="/">
-            <img src={Logo} alt="logo" />
-          </Link>
-        </div>
         <h1 className="membershipForm_header">Become a member</h1>
         <p className="membershipForm_subheader">Be the change</p>
         <form className="membershipForm">

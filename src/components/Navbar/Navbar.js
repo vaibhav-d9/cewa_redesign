@@ -7,20 +7,16 @@ import { Link } from "react-router-dom";
 import { changeNavbar, selectApp } from "../../features/appSlice";
 
 function Navbar() {
-  const dispatch = useDispatch();
-  const handleHomeNavigation = () => {
-    dispatch(changeNavbar(false));
-  };
-
-  const homeScreen = useSelector(selectApp);
-
   return (
-    <div className={homeScreen ? "navbar_" : "navbar"}>
+    <div className="navbar">
       <div className="navbar_logo">
-        <Link to="/" onClick={handleHomeNavigation}>
+        <Link to="/">
           <img src={Logo} alt="logo" />
         </Link>
       </div>
+      <Link to="/donate">
+        <button className="donate_button">Donate</button>
+      </Link>
     </div>
   );
 }

@@ -14,10 +14,9 @@ function App() {
     <div className="app">
       <Router>
         {/* <ContactHeader /> */}
-
+        <Navbar />
         <Switch>
           <Route exact path="/">
-            <Navbar />
             <Home />
           </Route>
 
