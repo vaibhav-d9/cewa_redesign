@@ -14,20 +14,24 @@ function App() {
     <div className="app">
       <Router>
         {/* <ContactHeader /> */}
-        <Navbar />
+
         <Switch>
           <Route exact path="/">
+            <Navbar />
             <Home />
           </Route>
 
           <Route exact path="/events">
+            <Navbar />
             <Events />
           </Route>
 
           <Route exact path="/joinus">
+            <Navbar />
             <JoinUs />
           </Route>
           <Route exact path="/donate">
+            <Navbar isDonatePage={true} />
             <Donate />
           </Route>
         </Switch>

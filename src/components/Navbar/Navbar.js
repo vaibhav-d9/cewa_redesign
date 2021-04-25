@@ -6,7 +6,7 @@ import Logo from "../../CEWAlogo.png";
 import { Link } from "react-router-dom";
 import { changeNavbar, selectApp } from "../../features/appSlice";
 
-function Navbar() {
+function Navbar({ isDonatePage }) {
   return (
     <div className="navbar">
       <div className="navbar_logo">
@@ -14,9 +14,11 @@ function Navbar() {
           <img src={Logo} alt="logo" />
         </Link>
       </div>
-      <Link to="/donate">
-        <button className="donate_button">Donate</button>
-      </Link>
+      {!isDonatePage && (
+        <Link to="/donate">
+          <button className="donate_button">Donate</button>
+        </Link>
+      )}
     </div>
   );
 }

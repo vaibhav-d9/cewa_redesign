@@ -119,7 +119,7 @@ const Donate = () => {
             <input type="number" onChange={(e) => setamount(e.target.value)} />
           </div>
           <div>
-            <button className="donate_button" onClick={razorpayHandler}>
+            <button className="payment_button" onClick={razorpayHandler}>
               Proceed with payment
             </button>
           </div>
