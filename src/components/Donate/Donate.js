@@ -11,8 +11,12 @@ const Donate = () => {
   // const [desc, setdesc] = useState("");
   const [contact, setcontact] = useState("");
   const [address, setaddress] = useState("");
+  const [enablePayment, setEnablePayment] = useState(false);
   /** Handler for Payment */
   const razorpayHandler = async () => {
+    if (amount === 0) {
+      return alert("Please enter an amount greater than 0.");
+    }
     // console.log(amt);
     await Axios.post("http://localhost:5000/donate/orders", {
       amount: amount,
@@ -91,19 +95,27 @@ const Donate = () => {
         </div>
         <div className="donateCard_right">
           <div>
-            <label htmlFor="name">Full name</label>
+            <label htmlFor="name">
+              Full name <span>*</span>{" "}
+            </label>
             <input type="text" onChange={(e) => setname(e.target.value)} />
           </div>
           <div>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">
+              Email<span>*</span>
+            </label>
             <input type="email" onChange={(e) => setemail(e.target.value)} />
           </div>
           <div>
-            <label htmlFor="contact">Contact number</label>
+            <label htmlFor="contact">
+              Contact number<span>*</span>
+            </label>
             <input type="phone" onChange={(e) => setcontact(e.target.value)} />
           </div>
           <div className="amount">
-            <label htmlFor="amount">Amount</label>
+            <label htmlFor="amount">
+              Amount<span>*</span>
+            </label>
             <input type="number" onChange={(e) => setamount(e.target.value)} />
           </div>
           <div>
