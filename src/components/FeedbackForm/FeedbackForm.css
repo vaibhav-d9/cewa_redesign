@@ -41,36 +41,21 @@
   margin-top: 20px;
 }
 .feedbackForm button {
-  padding: 6px;
-  background-color: rgb(236, 95, 30);
+  padding: 5px;
+  background-color: rgb(236, 95, 30) !important;
   border: 2px solid rgb(236, 95, 30);
   color: white;
   outline: none;
-  font-weight: 500;
   width: 6rem;
   font-size: 12px;
   cursor: pointer;
   border-radius: 100px;
   font-weight: 500;
-  letter-spacing: 2px;
   text-align: center;
   margin-top: 20px;
 }
 .feedbackForm button:hover {
-  padding: 6px;
-  background-color: rgb(236, 95, 30);
-  border: 2px solid rgb(236, 95, 30);
-  color: white;
-  outline: none;
-  font-weight: 500;
-  width: 6rem;
-  font-size: 12px;
-  cursor: pointer;
-  border-radius: 100px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-align: center;
-  margin-top: 20px;
+  font-weight: 600;
   box-shadow: 0px 2px 22px -3px rgba(255, 60, 0, 1);
 }
 .feedbackForm label {
@@ -93,5 +78,8 @@
   }
   .feedbackForm button {
     font-size: 14px;
+  }
+  .feedbackForm form button {
+    margin-left: 130px;
   }
 }

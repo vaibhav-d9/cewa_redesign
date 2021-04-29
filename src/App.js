@@ -12,32 +12,32 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <div className="app">
-      <Router>
-        {/* <ContactHeader /> */}
+      <div className="main">
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Navbar />
+              <Home />
+            </Route>
 
-        <Switch>
-          <Route exact path="/">
-            <Navbar />
-            <Home />
-          </Route>
+            <Route exact path="/events">
+              <Navbar />
+              <Events />
+            </Route>
 
-          <Route exact path="/events">
-            <Navbar />
-            <Events />
-          </Route>
+            <Route exact path="/joinus">
+              <Navbar />
+              <JoinUs />
+            </Route>
+            <Route exact path="/donate">
+              <Navbar isDonatePage={true} />
+              <Donate />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
 
-          <Route exact path="/joinus">
-            <Navbar />
-            <JoinUs />
-          </Route>
-          <Route exact path="/donate">
-            <Navbar isDonatePage={true} />
-            <Donate />
-          </Route>
-        </Switch>
-
-        <Footer />
-      </Router>
+      <Footer />
     </div>
   );
 }

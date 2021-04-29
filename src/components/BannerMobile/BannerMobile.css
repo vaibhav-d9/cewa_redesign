@@ -59,25 +59,11 @@
   width: 8rem;
   cursor: pointer;
   border-radius: 100px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 12px;
-}
-.joinus_Button:hover {
-  position: absolute;
-  padding: 5px;
-  background-color: rgb(236, 95, 30);
-  border: 2px solid rgb(236, 95, 30);
-  color: white;
-  outline: none;
   font-weight: 500;
-  width: 8rem;
-  cursor: pointer;
-  border-radius: 100px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 12px;
+  /* letter-spacing: 2px; */
+  font-size: 14px;
 }
+
 @media only screen and (max-width: 555px) {
   .bannerMobile_overlay h1 {
     font-size: 30px;
@@ -96,5 +82,19 @@
   }
   .bannerMobile_overlay h1 {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 645px) {
+  .bannerMobile_overlay {
+    top: 13%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .bannerMobile_overlay {
+    top: 10%;
   }
 }

@@ -59,8 +59,6 @@
   margin-top: 30px;
   margin-left: -10px;
 }
-.feedbackFormContainer_social a {
-}
 
 .feedbackFormContainer_right .MuiSvgIcon-root {
   font-size: 26px;
@@ -68,12 +66,6 @@
 
 .feedbackFormContainer_social .MuiSvgIcon-root {
   color: rgb(236, 95, 30);
-}
-
-@media only screen and (max-width: 1080px) {
-  .feedbackForm_container {
-    width: 80%;
-  }
 }
 @media only screen and (max-width: 882px) {
   .section1 {
@@ -114,7 +106,6 @@
     text-align: center;
   }
   .feedbackForm_container {
-    width: 90%;
     margin-top: 1rem;
   }
 }

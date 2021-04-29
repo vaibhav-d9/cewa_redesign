@@ -41,7 +41,12 @@ function WhatDrivesUs() {
         opportunities to perceive their potential.
       </p>
       <Link to="/joinus">
-        <Button>Join Us</Button>
+        <Button
+          className="joinus_button"
+          style={{ padding: "5px", letterSpacing: "0", fontWeight: "500" }}
+        >
+          Join Us
+        </Button>
       </Link>
     </div>
   );

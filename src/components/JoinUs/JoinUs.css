@@ -57,7 +57,7 @@
 }
 .joinUs_right form button {
   padding: 6px;
-  background-color: rgb(236, 95, 30);
+  background-color: rgb(236, 95, 30) !important;
   border: 2px solid rgb(236, 95, 30);
   color: white;
   outline: none;
@@ -66,24 +66,10 @@
   margin-top: 20px;
   cursor: pointer;
   border-radius: 100px;
-  font-weight: 600;
-  letter-spacing: 2px;
   font-size: 13px;
 }
 .joinUs_right form button:hover {
-  padding: 6px;
-  background-color: rgb(236, 95, 30);
-  border: 2px solid rgb(236, 95, 30);
-  color: white;
-  outline: none;
-  font-weight: 500;
-  width: 8rem;
-  margin-top: 20px;
-  cursor: pointer;
-  border-radius: 100px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-size: 13px;
+  font-weight: 600;
   box-shadow: 0px 2px 22px -3px rgba(255, 60, 0, 1);
 }
 .membershipForm_subheader {

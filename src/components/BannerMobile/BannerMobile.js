@@ -16,16 +16,15 @@ function BannerMobile() {
           <h1>We are the</h1>
           <h2>Future</h2>
 
-          <p className="bannerMobile_quote">
-            "There can be no keener revelation of a society's soul than the way
-            in which it treats its children." — Nelson Mandela
-          </p>
-
-          <Link to="/joinus">
-            <Button className="joinus_Button" href="/joinus">
-              Join us
-            </Button>
-          </Link>
+          <div style={{ display: "grid", placeItems: "center" }}>
+            <p className="bannerMobile_quote" style={{ marginBottom: "30px" }}>
+              "There can be no keener revelation of a society's soul than the
+              way in which it treats its children." — Nelson Mandela
+            </p>
+            <Link to="/joinus">
+              <Button className="joinus_Button">Join us</Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
