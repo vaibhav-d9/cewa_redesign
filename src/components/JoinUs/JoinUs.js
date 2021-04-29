@@ -23,7 +23,7 @@ function JoinUs() {
   const handleMembershipFormSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:5000/membership", {
+    fetch("https://cewa-backend.herokuapp.com/membership", {
       method: "POST",
       body: {
         name,
@@ -48,11 +48,6 @@ function JoinUs() {
         />
       </div>
       <div className="joinUs_right">
-        <div className="logo">
-          <Link to="/">
-            <img src={Logo} alt="logo" />
-          </Link>
-        </div>
         <h1 className="membershipForm_header">Become a member</h1>
         <p className="membershipForm_subheader">Be the change</p>
         <form className="membershipForm">

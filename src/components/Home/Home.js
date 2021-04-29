@@ -10,6 +10,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import IconButton from "@material-ui/core/IconButton";
 
 const About = lazy(() => import("../About/About"));
 const Banner = lazy(() => import("../Banner/Banner"));
@@ -83,11 +84,47 @@ function Home() {
             </div>
 
             <div className="feedbackFormContainer_social">
-              <FacebookIcon />
-              <TwitterIcon />
-              <InstagramIcon />
-              <LinkedInIcon />
-              <YouTubeIcon />
+              <a
+                href="https://www.facebook.com/cewa.ngo.37?epa=SEARCH_BOX"
+                target="_blank"
+              >
+                <IconButton>
+                  <FacebookIcon />
+                </IconButton>
+              </a>
+
+              <a href="https://twitter.com/NgoCewa" target="_blank">
+                <IconButton>
+                  <TwitterIcon />
+                </IconButton>
+              </a>
+
+              <a
+                href="https://www.instagram.com/_cewa_foundation_/"
+                target="_blank"
+              >
+                <IconButton>
+                  <InstagramIcon />
+                </IconButton>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/cewa-foundation/"
+                target="_blank"
+              >
+                <IconButton>
+                  <LinkedInIcon />
+                </IconButton>
+              </a>
+
+              <a
+                href="https://www.youtube.com/channel/UCqlu42Q07WeEzaGevsouB_w"
+                target="_blank"
+              >
+                <IconButton>
+                  <YouTubeIcon />
+                </IconButton>
+              </a>
             </div>
           </div>
         </div>

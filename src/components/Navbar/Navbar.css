@@ -2,63 +2,65 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 30px;
-  position: absolute;
+  padding: 0 40px 0 30px;
+  position: relative;
   width: 100vw;
+  background-color: white;
+  z-index: 100;
+  height: 55px;
+  box-shadow: 0px 2px 18px -3px rgba(41, 41, 41, 0.15);
 }
 .navbar_logo {
-  flex: 0.5;
+  padding-top: 10px !important;
 }
 .navbar_logo img {
   width: 120px;
 }
-.navbar_links {
-  flex: 0.5;
-  display: flex;
-  justify-content: flex-end;
+@keyframes ripple {
+  0% {
+    background-position: 120% 50%;
+  }
+  100% {
+    background-position: -20% 50%;
+  }
 }
-.navbar_links a {
-  text-decoration: none;
-  color: rgb(58, 58, 58);
+.donate_button {
+  padding: 10px;
+  background-color: rgb(236, 95, 30);
+  border: 2px solid rgb(236, 95, 30);
+  color: white;
+  outline: none;
+  font-weight: 500;
+  width: 6rem;
+  cursor: pointer;
+  border-radius: 100px;
   font-weight: 600;
-  margin-right: 70px;
+  letter-spacing: 1px;
+  animation: ripple 2s infinite ease-in-out;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    60deg,
+    rgb(236, 95, 30) 0%,
+    rgb(236, 95, 30) 45%,
+    #ffbaae 50%,
+    rgb(236, 95, 30) 55%,
+    rgb(236, 95, 30) 100%
+  );
 }
-.navbar_links a:hover {
-  color: rgba(255, 255, 255, 0.726);
-}
-.navbar_ {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 0 0 30px;
-  width: 100vw;
-  background-color: whitesmoke;
-  position: relative;
-  -webkit-box-shadow: 0px 2px 18px -3px rgba(41, 41, 41, 0.15);
-  -moz-box-shadow: 0px 2px 18px -3px rgba(41, 41, 41, 0.15);
-  box-shadow: 0px 2px 18px -3px rgba(41, 41, 41, 0.15);
+.donate_button:hover {
+  padding: 10px;
+  background-color: rgb(236, 95, 30);
+  border: 2px solid rgb(236, 95, 30);
+  color: white;
+  outline: none;
+  font-weight: 500;
+  width: 6rem;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 700;
+  box-shadow: 0px 2px 22px -3px rgba(255, 60, 0, 1);
 }
 
-.navbar_menu {
-  display: none;
-}
-
-.navbar_Links {
-  flex: 0.5;
-  display: flex;
-  /* justify-content: flex-end; */
-}
-.navbar_Links a {
-  text-decoration: none;
-  color: rgb(58, 58, 58);
-  font-weight: 600;
-}
-.navbar_Links a:hover {
-  color: rgb(236, 95, 30);
-}
-.navbar_Links a:focus {
-  color: rgb(236, 95, 30);
-}
 @media only screen and (max-width: 768px) {
   .navbar_Links,
   .navbar_links {

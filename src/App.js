@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Donate from "./components/Donate/Donate";
-import ContactHeader from "./components/ContactHeader/ContactHeader";
+// import ContactHeader from "./components/ContactHeader/ContactHeader";
 import Events from "./components/Events/Events";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -10,6 +10,10 @@ import JoinUs from "./components/JoinUs/JoinUs";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
+  useEffect(() => {
+    fetch("https://cewa-backend.herokuapp.com/");
+    console.log("ping");
+  });
   return (
     <div className="app">
       <Router>
@@ -20,15 +24,20 @@ function App() {
             <Navbar />
             <Home />
           </Route>
-
+          <Route exact path="/termsandconditon">
+            <Tnc />
+          </Route>
           <Route exact path="/events">
+            <Navbar />
             <Events />
           </Route>
 
           <Route exact path="/joinus">
+            <Navbar />
             <JoinUs />
           </Route>
           <Route exact path="/donate">
+            <Navbar isDonatePage={true} />
             <Donate />
           </Route>
         </Switch>

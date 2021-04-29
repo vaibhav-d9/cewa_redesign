@@ -18,22 +18,22 @@ function FeedbackForm() {
   const handleFeedbackSubmit = (e) => {
     e.preventDefault();
 
-    if (firstname == "") {
+    if (firstname === "") {
       setFirstnameValidationError(true);
     } else {
       setFirstnameValidationError(false);
     }
-    if (lastname == "") {
+    if (lastname === "") {
       setLastnameValidationError(true);
     } else {
       setLastnameValidationError(false);
     }
-    if (email == "") {
+    if (email === "") {
       setEmailValidationError(true);
     } else {
       setEmailValidationError(false);
     }
-    if (message == "") {
+    if (message === "") {
       setMessageValidationError(true);
     } else {
       setMessageValidationError(false);
@@ -47,8 +47,8 @@ function FeedbackForm() {
     ) {
       return;
     } else {
-      console.log(firstname, lastname, email, message);
-      fetch("http://localhost:5000/feedback", {
+      // console.log(firstname, lastname, email, message);
+      fetch("https://cewa-backend.herokuapp.com/feedback", {
         method: "POST",
         body: {
           firstname,
@@ -58,10 +58,10 @@ function FeedbackForm() {
         },
       });
 
-      setFirstname("");
-      setLastname("");
-      setEmail("");
-      setMessage("");
+      // setFirstname("");
+      // setLastname("");
+      // setEmail("");
+      // setMessage("");
     }
   };
 

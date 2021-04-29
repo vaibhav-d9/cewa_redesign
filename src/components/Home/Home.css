@@ -12,7 +12,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 40px 12rem;
-  margin: 10rem auto 0 auto;
+  margin: 8rem auto 0 auto;
   align-items: center;
   /* background-color: rgba(255, 115, 0, 0.7); */
   background-color: whitesmoke;
@@ -24,7 +24,6 @@
 .feedbackForm_container p {
   font-weight: 500;
   color: rgb(190, 190, 190);
-  margin-top: 10px;
 }
 .feedbackFormContainer_left {
   /* margin-top: 40px; */
@@ -58,7 +57,11 @@
   align-items: center;
   width: 15rem;
   margin-top: 30px;
+  margin-left: -10px;
 }
+.feedbackFormContainer_social a {
+}
+
 .feedbackFormContainer_right .MuiSvgIcon-root {
   font-size: 26px;
 }
