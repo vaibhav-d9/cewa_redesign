@@ -1,0 +1,26 @@
+.thankyou{
+
+}
+.thankyou img{
+  width: 10rem;
+}
+.thankyou h2{
+  color: #01A601;
+  margin-bottom:1rem ;
+}
+.thankyou p{
+  line-height: 1.7rem;
+  /* letter-spacing: 1px; */
+}
+.thankyou div{
+  margin: 1rem 2rem;
+}
+.thankyou div p span{
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 1rem;
+} .thankyou div p{
+  padding: 0.25rem 1rem;
+  text-align: justify;
+}
