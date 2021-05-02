@@ -1,0 +1,24 @@
+.privacy{
+  width: 90vw;
+  margin: auto;
+  /* margin: 1rem; */
+  
+
+  /* height: 100vh; */
+  
+}
+.privacy h1{
+text-align: center;
+padding: 2rem;
+}
+.privacy h2{
+  padding: 1rem;
+}
+.privacy p{
+  padding: 1rem ;
+  text-align: justify;
+}
+.privacy li{
+  padding:0.25rem 1rem;
+  text-align: justify;
+}

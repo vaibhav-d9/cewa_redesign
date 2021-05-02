@@ -1,0 +1,24 @@
+.tnc{
+  width: 90vw;
+  margin: auto;
+  /* height: 100vh; */
+}
+.tnc p {
+  justify-content: center;
+  line-height: 1.7rem;
+}
+.tnc h1 {
+  text-align: center;
+  margin: 1rem;
+  margin-top: 2rem;
+
+}
+.para h2{
+  padding: 1rem;
+  justify-content: center;
+}
+.para p{
+padding: 2rem;
+line-height: 1.5rem;
+justify-content: center;
+}

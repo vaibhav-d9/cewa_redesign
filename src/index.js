@@ -4,12 +4,13 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import store from "./app/store";
+import Loading from "./components/Loading/Loading";
 const App = lazy(() => import("./App"));
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loading />}>
         <App />
       </Suspense>
     </Provider>

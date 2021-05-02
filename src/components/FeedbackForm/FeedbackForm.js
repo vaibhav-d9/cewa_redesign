@@ -67,7 +67,7 @@ function FeedbackForm() {
 
   return (
     <div className="feedbackForm">
-      <form>
+      <form style={{ maxWidth: "90rem" }}>
         <div className="name_input">
           <div className="firstname_input">
             <label for="firstname">

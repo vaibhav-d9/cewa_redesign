@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import "./Home.css";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
@@ -11,6 +11,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import IconButton from "@material-ui/core/IconButton";
+import Loading from "../Loading/Loading";
 
 const About = lazy(() => import("../About/About"));
 const Banner = lazy(() => import("../Banner/Banner"));
@@ -37,7 +38,7 @@ function Home() {
 
   return (
     <div className="home">
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<Loading />}>
         {isMobile ? <BannerMobile /> : <Banner />}
 
         <div className="section1">

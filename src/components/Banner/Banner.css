@@ -40,37 +40,24 @@
   object-fit: cover;
 }
 .joinus_button {
-  position: absolute;
-  padding: 10px;
-  top: 470px;
-  left: 380px;
-  /* background-color: whitesmoke; */
+  /* position: absolute; */
+  /* padding: 10px; */
+  /* top: 470px;
+  left: 380px; */
   background-color: rgb(236, 95, 30);
   border: 2px solid rgb(236, 95, 30);
   color: white;
   outline: none;
-  font-weight: 500;
   width: 10rem;
   cursor: pointer;
   border-radius: 100px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-weight: 500;
+  /* letter-spacing: 2px; */
 }
 .joinus_button:hover {
-  position: absolute;
-  padding: 10px;
-  top: 470px;
-  left: 380px;
-  background-color: rgb(236, 95, 30);
-  border: 2px solid rgb(236, 95, 30);
-  color: white;
-  outline: none;
-  font-weight: 500;
-  width: 10rem;
-  cursor: pointer;
-  border-radius: 100px;
-  font-weight: 700;
+  font-weight: 600;
   box-shadow: 0px 2px 22px -3px rgba(255, 60, 0, 1);
+  background-color: rgb(236, 95, 30);
 }
 
 .overlay {
@@ -80,13 +67,14 @@
   background-color: rgba(255, 115, 0, 0.486);
 }
 .banner_quote {
-  position: absolute;
-  top: 380px;
-  padding-left: 140px;
+  /* position: absolute; */
+  /* top: 380px; */
+  /* padding-left: 140px; */
   margin-right: 5px;
   line-height: 25px;
   font-style: italic;
   font-weight: 500;
   font-size: 18px;
   color: rgb(27, 27, 27);
+  margin-bottom: 40px;
 }

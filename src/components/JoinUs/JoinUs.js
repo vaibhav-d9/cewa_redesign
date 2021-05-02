@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-
 import "./JoinUs.css";
-import Logo from "../../CEWAlogo.png";
 import Button from "@material-ui/core/Button";
 
 function JoinUs() {
@@ -50,7 +47,7 @@ function JoinUs() {
       <div className="joinUs_right">
         <h1 className="membershipForm_header">Become a member</h1>
         <p className="membershipForm_subheader">Be the change</p>
-        <form className="membershipForm">
+        <form className="membershipForm" style={{ maxWidth: "90vw" }}>
           <div className="membershipForm_field">
             <label for="name">Name</label>
             <input

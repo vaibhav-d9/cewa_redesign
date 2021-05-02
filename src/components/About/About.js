@@ -1,5 +1,5 @@
 import React from "react";
-import Founders from "../Founders/Founders";
+// import Founders from "../Founders/Founders";
 
 import "./About.css";
 

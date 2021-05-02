@@ -14,7 +14,7 @@ function ContactHeader() {
       <div className="contactHeader_left">
         <div className="contactHeader_phone">
           <PhoneIcon />
-          <a href="tel:9870233978">9870233978</a>
+          <a href="tel:9870233978">9821782988</a>
         </div>
         <div className="contactHeader_email">
           <EmailIcon />
