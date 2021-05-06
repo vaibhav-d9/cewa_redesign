@@ -50,8 +50,8 @@ const Donate = () => {
             razorpay_signature: response.razorpay_signature,
             razorpay_order_id: response.razorpay_order_id,
             transaction_id: response.razorpay_payment_id,
-            transaction_amount: this.amount,
-            transaction_author: this.name,
+            transaction_amount: amount,
+            transaction_author: name,
           };
           await Axios.post(
             `https://still-sea-99702.herokuapp.com/donate/capture/${values.transaction_id}`,
