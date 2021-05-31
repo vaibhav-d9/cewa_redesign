@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import JoinUs from "./components/JoinUs/JoinUs";
 import Navbar from "./components/Navbar/Navbar";
 import Privacy from "./components/Privacy/Privacy";
+import Team from "./components/Team/Team";
 import Tnc from "./components/Tnc/Tnc";
 
 function App() {
@@ -36,6 +37,10 @@ function App() {
             <Route exact path="/events">
               <Navbar />
               <Events />
+            </Route>
+            <Route exact path="/team">
+              <Navbar />
+              <Team />
             </Route>
 
             <Route exact path="/joinus">

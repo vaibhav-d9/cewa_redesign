@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,600;1,700&display=swap');
+.team{
+  background: #f08a5824;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,500;1,200;1,300;1,800&display=swap');
+.top-head{
+  display: flex;
+  margin: auto;
+  /* margin-top: 4rem; */
+  font-size: 1.5rem;
+  /* width: 90rem; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards li{
+  width: 15rem;
+  /* height: 20rem;s */
+  background-color: blue;
+  margin: .5rem;
+  padding: 0;
+  line-height: 0;
+  position: relative;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5rem;
+  flex-grow: 3;
+  list-style: none;
+
+}
+.cards span{
+  display: flex;
+}
+.cards li Img{
+  width: inherit;
+  margin: 0;
+  padding: 0;
+}
+span{
+  margin: 0;
+  padding: 0;
+}
+.cards li:hover{
+  transform: scale(1.25);
+  z-index: 1;
+  transition: 300ms ease-in-out;
+}
+.hover{
+  /* display:none ; */
+  position: absolute;
+    width: 13rem;
+    cursor: pointer ;
+    height: 13rem;
+    top: 1rem;
+    margin: auto;
+    /* background: red; */
+    
+    left: 1rem;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1);
+    background-color: rgba(255,255,255,0.95);
+    text-align: center;
+}
+.hover:hover{
+/* display: block; */
+opacity: 1;
+z-index: 1;
+}
+.name{
+  font-family: "Crimson Text",Georgia,Serif;
+    font-size: 1rem;
+    color: #484747;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+.desig{
+  font-family: "Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 0;
+    color: #484747d1;
+    font-size: .8rem;
+    line-height: .9rem;
+    padding: 0 15px;
+}
+.hover {
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+}

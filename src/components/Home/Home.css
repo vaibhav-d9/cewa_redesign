@@ -1,6 +1,9 @@
 .home .section1 {
   display: flex;
 }
+p{
+  text-align: justify;
+}
 .recentEvents_container {
   width: 50%;
 }
@@ -56,9 +59,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 15rem;
-  margin-top: 30px;
-  margin-left: -10px;
 }
 
 .feedbackFormContainer_right .MuiSvgIcon-root {
@@ -69,6 +69,9 @@
   color: rgb(236, 95, 30);
 }
 @media only screen and (max-width: 882px) {
+  .feedbackFormContainer_social {
+display: none;}
+  
   .section1 {
     flex-direction: column-reverse;
   }

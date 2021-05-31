@@ -25,7 +25,7 @@ function Banner() {
             "There can be no keener revelation of a society's soul than the way
             in which it treats its children." — Nelson Mandela
           </p>
-          <Link to="/joinus">
+          <Link to="/joinus" style={{ textDecoration: "none" }}>
             <Button className="joinus_button" href="/joinus">
               Join us
             </Button>

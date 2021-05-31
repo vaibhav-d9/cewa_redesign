@@ -24,6 +24,10 @@
     background-position: -20% 50%;
   }
 }
+.nav-buttons{
+  display: flex;
+  list-style: none;
+}
 .donate_button {
   padding: 10px;
   background-color: rgb(236, 95, 30);
@@ -53,6 +57,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .nav-buttons{
+    display: none;
+    list-style: none;
+  }
   .navbar_Links,
   .navbar_links {
     display: none;
