@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,600;1,700&display=swap');
 .team{
-  background: #f08a5824;
+  background: #8bc34a42;
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,500;1,200;1,300;1,800&display=swap');
@@ -26,26 +26,38 @@
 .cards{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 5rem;
+  margin: auto;
+  margin-top: 3rem;
+  width: 70vw;
   flex-grow: 3;
   list-style: none;
 
 }
 .cards span{
   display: flex;
+  flex-wrap: wrap;
 }
-.cards li Img{
+.cards li img{
+  filter: grayscale(40%);
   width: inherit;
   margin: 0;
   padding: 0;
+}
+.cards h1{
+  padding: 1rem;
+}
+img:hover{
+
+  filter: none;
 }
 span{
   margin: 0;
   padding: 0;
 }
 .cards li:hover{
-  transform: scale(1.25);
+  /* transform: scale(1.25); */
   z-index: 1;
   transition: 300ms ease-in-out;
 }
@@ -91,4 +103,11 @@ flex-direction: column;
 text-align: center;
 align-items: center;
 justify-content: center;
+}
+@media(max-width:420px){
+  .top-head{
+    font-size: 1rem;
+    width: 90vw;
+    background:none;
+  }
 }

@@ -72,9 +72,9 @@ function Home() {
               </a>
             </div>
             <div className="feedbackFormContainer_phone">
-              <a href="tel:9870233978">
+              <a href="tel:9821782988">
                 <PhoneIcon />
-                <p>9870233978</p>
+                <p>+91 982-178-2988</p>
               </a>
             </div>
             <div className="feedbackFormContainer_email">

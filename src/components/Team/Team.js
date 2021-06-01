@@ -11,6 +11,8 @@ import vaibhav from "../../assets/team/vaibhav.jpeg";
 import sachin from "../../assets/team/sachin.jpg";
 import team from "../../assets/team/team.jpeg";
 import ahsrah from "../../assets/team/ahsrah.jpg";
+import rahul from "../../assets/team/rahul.jpeg";
+import pragati from "../../assets/team/pragati.jpeg";
 import "./Team.css";
 import "animate.css/animate.min.css";
 import img from "react-optimized-image";
@@ -59,6 +61,7 @@ class Team extends React.Component {
             animateIn="fadeIn"
             animateOut="fadeOut"
           >
+            <h1>BOARD OF DIRECTORS</h1>
             <span>
               <li
                 style={{
@@ -84,9 +87,34 @@ class Team extends React.Component {
                   <span className="desig">Co-Founder </span>
                 </span>
               </li>
+              <li
+                style={{
+                  // transform: "translate(0, -4rem)",
+                  backgroundColor: "#759846",
+                }}
+              >
+                <img src={pragati} alt="pragati" />{" "}
+                <span className="hover">
+                  <span className="name">Pragati Singh</span>
+                  <span className="desig">Co-Founder </span>
+                </span>
+              </li>{" "}
+              <li
+                style={{
+                  // transform: "translate(0, -4rem)",
+                  backgroundColor: "#759846",
+                }}
+              >
+                <img src={rahul} alt="rahul" />{" "}
+                <span className="hover">
+                  <span className="name">Rahul</span>
+                  <span className="desig">Co-Founder </span>
+                </span>
+              </li>
             </span>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
+            <h1>EXECUTIVE EXPERT</h1>
             <span>
               <li
                 style={{
@@ -114,26 +142,16 @@ class Team extends React.Component {
               </li>
               <li
                 style={{
-                  // transform: "translate(-64px, -5rem)",
-                  backgroundColor: "#946823",
+                  // transform: "translate(-30rem, 0rem)",
+                  backgroundColor: "#245968",
                 }}
               >
-                <img src={kanishka} alt="bhavya" />{" "}
+                <img src={gunjan} alt="kanishka" />{" "}
                 <span className="hover">
-                  <span className="name">Kanishka</span>
-                  <span className="desig">Marketing Coordinator</span>
-                </span>
-              </li>
-              <li
-                style={{
-                  // transform: "translate(0, -5rem)",
-                  backgroundColor: "#675923",
-                }}
-              >
-                <img src={namish} alt="namish" />{" "}
-                <span className="hover">
-                  <span className="name">Namish Patel</span>
-                  <span className="desig">Management Coordinator</span>
+                  <span className="name">Gunjan Chaudhary</span>
+                  <span className="desig">
+                    Media Public Relation Coordinator
+                  </span>
                 </span>
               </li>
               <li
@@ -152,17 +170,30 @@ class Team extends React.Component {
               </li>
             </span>
           </ScrollAnimation>
+          <h1>SENIOR COORDINATOR</h1>
           <span>
             <li
               style={{
-                // transform: "translate(-30rem, 0rem)",
-                backgroundColor: "#245968",
+                // transform: "translate(-64px, -5rem)",
+                backgroundColor: "#946823",
               }}
             >
-              <img src={gunjan} alt="kanishka" />{" "}
+              <img src={kanishka} alt="bhavya" />{" "}
               <span className="hover">
-                <span className="name">Gunjan Chaudhary</span>
-                <span className="desig">Media Public Relation Coordinator</span>
+                <span className="name">Kanishka</span>
+                <span className="desig">Marketing Coordinator</span>
+              </span>
+            </li>
+            <li
+              style={{
+                // transform: "translate(0, -5rem)",
+                backgroundColor: "#675923",
+              }}
+            >
+              <img src={namish} alt="namish" />{" "}
+              <span className="hover">
+                <span className="name">Namish Patel</span>
+                <span className="desig">Management Coordinator</span>
               </span>
             </li>
             <li
