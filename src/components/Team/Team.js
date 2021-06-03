@@ -9,7 +9,7 @@ import namish from "../../assets/team/namish-min-1.png";
 import pps from "../../assets/team/pps-1.png";
 import vaibhav from "../../assets/team/vaibhav-min-1.png";
 import sachin from "../../assets/team/sachin-min-1.png";
-import team from "../../assets/team/team-min.jpeg";
+import team from "../../assets/team/team-min.jpeg2133";
 import ahsrah from "../../assets/team/ahsrah-min-1.png";
 import rahul from "../../assets/team/rahul-1.png";
 import pragati from "../../assets/team/pragati-min-1.png";
@@ -37,9 +37,7 @@ class Team extends React.Component {
               background: "#00000070",
             }}
           >
-            <h1 style={{ lineHeight: "7rem", color: "#FFF" }}>
-              Our Team Members
-            </h1>
+            <h1 style={{ lineHeight: "7rem", color: "#FFF" }}>Our Team</h1>
             <p
               style={{
                 color: "#FFF",
