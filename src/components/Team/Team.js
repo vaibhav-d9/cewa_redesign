@@ -1,21 +1,21 @@
 import React from "react";
-import shivam from "../../assets/team/shivam.jpeg";
-import bhavya from "../../assets/team/Bhavya.jpg";
-import gunjan from "../../assets/team/gunjan.jpg";
-import harsh from "../../assets/team/harsh.jpg";
-import kanishka from "../../assets/team/Kanishka.jpeg";
-import khushi from "../../assets/team/khushi.jpeg";
-import namish from "../../assets/team/namish.jpeg";
-import pps from "../../assets/team/pps.jpg";
-import vaibhav from "../../assets/team/vaibhav.jpeg";
-import sachin from "../../assets/team/sachin.jpg";
-import team from "../../assets/team/team.jpeg";
-import ahsrah from "../../assets/team/ahsrah.jpg";
-import rahul from "../../assets/team/rahul.jpeg";
-import pragati from "../../assets/team/pragati.jpeg";
+import shivam from "../../assets/team/shivam-min.jpeg";
+import bhavya from "../../assets/team/Bhavya-min.jpg";
+import gunjan from "../../assets/team/gunjan-min.jpg";
+import harsh from "../../assets/team/harsh-min.jpg";
+import kanishka from "../../assets/team/Kanishka-min.jpeg";
+import khushi from "../../assets/team/khushi-min.jpeg";
+import namish from "../../assets/team/namish-min.jpeg";
+import pps from "../../assets/team/pps-min.jpg";
+import vaibhav from "../../assets/team/vaibhav-min.jpeg";
+import sachin from "../../assets/team/sachin-min.jpg";
+import team from "../../assets/team/team-min.jpeg";
+import ahsrah from "../../assets/team/ahsrah-min.jpg";
+import rahul from "../../assets/team/rahul-min.jpeg";
+import pragati from "../../assets/team/pragati-min.jpeg";
 import "./Team.css";
 import "animate.css/animate.min.css";
-import img from "react-optimized-image";
+// import img from "react-optimized-image";
 
 // import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -96,7 +96,7 @@ class Team extends React.Component {
                 <img src={pragati} alt="pragati" />{" "}
                 <span className="hover">
                   <span className="name">Pragati Singh</span>
-                  <span className="desig">Co-Founder </span>
+                  <span className="desig">Treasurer </span>
                 </span>
               </li>{" "}
               <li
@@ -108,7 +108,7 @@ class Team extends React.Component {
                 <img src={rahul} alt="rahul" />{" "}
                 <span className="hover">
                   <span className="name">Rahul</span>
-                  <span className="desig">Co-Founder </span>
+                  <span className="desig">Lead Management Expert</span>
                 </span>
               </li>
             </span>
@@ -170,7 +170,7 @@ class Team extends React.Component {
               </li>
             </span>
           </ScrollAnimation>
-          <h1>SENIOR COORDINATOR</h1>
+          <h1>SENIOR COORDINATORS</h1>
           <span>
             <li
               style={{
@@ -178,10 +178,10 @@ class Team extends React.Component {
                 backgroundColor: "#946823",
               }}
             >
-              <img src={kanishka} alt="bhavya" />{" "}
+              <img src={harsh} alt="bhavya" />{" "}
               <span className="hover">
-                <span className="name">Kanishka</span>
-                <span className="desig">Marketing Coordinator</span>
+                <span className="name">Harsh Gupta</span>
+                <span className="desig">Management Coordinator</span>
               </span>
             </li>
             <li
@@ -226,10 +226,11 @@ class Team extends React.Component {
                 backgroundColor: "#345698",
               }}
             >
-              <img src={harsh} alt="sachin" />
+              <img src={kanishka} alt="sachin" />
+
               <span className="hover">
-                <span className="name">Harsh Gupta</span>
-                <span className="desig">Management Coordinator</span>
+                <span className="name">Kanishka</span>
+                <span className="desig">Marketing Coordinator</span>
               </span>
             </li>
           </span>
