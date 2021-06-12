@@ -51,6 +51,10 @@ function App() {
               <Navbar isDonatePage={true} />
               <Donate />
             </Route>
+            <Route exact path="/donate/:id">
+              <Navbar isDonatePage={true} />
+              <Donate />
+            </Route>
           </Switch>
           <Footer />
         </Router>
