@@ -24,28 +24,29 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Navbar />
-              <Home />
+              <Home /> <Footer />
             </Route>
             <Route exact path="/termsandconditions">
               <Navbar />
-              <Tnc />
+              <Tnc /> <Footer />
             </Route>
             <Route exact path="/privacy">
               <Navbar />
-              <Privacy />
+              <Privacy /> <Footer />
             </Route>
             <Route exact path="/events">
               <Navbar />
-              <Events />
+              <Events /> <Footer />
             </Route>
             <Route exact path="/team">
               <Navbar />
-              <Team />
+              <Team /> <Footer />
             </Route>
 
             <Route exact path="/joinus">
               <Navbar />
               <JoinUs />
+              <Footer />
             </Route>
             <Route exact path="/donate">
               <Navbar isDonatePage={true} />
@@ -56,7 +57,6 @@ function App() {
               <Donate />
             </Route>
           </Switch>
-          <Footer />
         </Router>
       </div>
     </div>
