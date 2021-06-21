@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./BottomBanner.css";
-import bottomBanner from "../../assets/images/bottomBanner.jpg";
+import bottomBanner from "../../assets/images/bottomBanner.webp";
 
 function BottomBanner() {
   return (

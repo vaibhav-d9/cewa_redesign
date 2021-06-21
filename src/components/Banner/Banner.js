@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Banner.css";
-import BannerImg from "../../assets/images/bannerImg.jpg";
+import BannerImg from "../../assets/images/bannerImg.webp";
 import Button from "@material-ui/core/Button";
 
 function Banner() {

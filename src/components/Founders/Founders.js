@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./Founders.css";
-import prakhar from "../../assets/images/prakhar1.jpg";
-import harsha from "../../assets/images/harsha1.jpg";
+import prakhar from "../../assets/images/prakhar1.webp";
+import harsha from "../../assets/images/harsha1.webp";
 import FormatQuoteRoundedIcon from "@material-ui/icons/FormatQuoteRounded";
 
 function Founders() {

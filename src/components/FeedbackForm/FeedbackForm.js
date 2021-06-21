@@ -1,16 +1,16 @@
 import React, { useState } from "react";
+import Button from "../../widgets/Button";
 
 import "./FeedbackForm.css";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 
 function FeedbackForm() {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [firstnameValidationError, setFirstnameValidationError] = useState(
-    false
-  );
+  const [firstnameValidationError, setFirstnameValidationError] =
+    useState(false);
   const [lastnameValidationError, setLastnameValidationError] = useState(false);
   const [emailValidationError, setEmailValidationError] = useState(false);
   const [messageValidationError, setMessageValidationError] = useState(false);
@@ -139,7 +139,12 @@ function FeedbackForm() {
           )}
         </div>
 
-        <Button onClick={handleFeedbackSubmit}>Submit</Button>
+        <Button
+          onClick={handleFeedbackSubmit}
+          text="Submit"
+          margin="10px 0"
+          width="6rem"
+        />
       </form>
     </div>
   );
