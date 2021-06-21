@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import JoinUs from "./components/JoinUs/JoinUs";
 import Navbar from "./components/Navbar/Navbar";
 import Privacy from "./components/Privacy/Privacy";
+import Team from "./components/Team/Team";
 import Tnc from "./components/Tnc/Tnc";
 
 function App() {
@@ -23,31 +24,39 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Navbar />
-              <Home />
+              <Home /> <Footer />
             </Route>
             <Route exact path="/termsandconditions">
               <Navbar />
-              <Tnc />
+              <Tnc /> <Footer />
             </Route>
             <Route exact path="/privacy">
               <Navbar />
-              <Privacy />
+              <Privacy /> <Footer />
             </Route>
             <Route exact path="/events">
               <Navbar />
-              <Events />
+              <Events /> <Footer />
+            </Route>
+            <Route exact path="/team">
+              <Navbar />
+              <Team /> <Footer />
             </Route>
 
             <Route exact path="/joinus">
               <Navbar />
               <JoinUs />
+              <Footer />
             </Route>
             <Route exact path="/donate">
               <Navbar isDonatePage={true} />
               <Donate />
             </Route>
+            <Route exact path="/donate/:id">
+              <Navbar isDonatePage={true} />
+              <Donate />
+            </Route>
           </Switch>
-          <Footer />
         </Router>
       </div>
     </div>

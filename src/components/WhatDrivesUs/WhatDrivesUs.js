@@ -40,7 +40,7 @@ function WhatDrivesUs() {
         all forms of exploitation and discrimination, where everyone has equal
         opportunities to perceive their potential.
       </p>
-      <Link to="/joinus">
+      <Link to="/joinus" style={{ textDecoration: "none" }}>
         <Button
           className="joinus_button"
           style={{ padding: "5px", letterSpacing: "0", fontWeight: "500" }}

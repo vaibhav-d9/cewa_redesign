@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../../CEWAlogo.png";
 import "./Footer.css";
 
 function Footer() {
@@ -17,7 +17,7 @@ function Footer() {
             textDecorationLine: "none",
           }}
         >
-          <span>Privacy Policy</span>
+          <span>PRIVACY POLICY</span>
         </Link>{" "}
         <b>|</b>
         <Link
@@ -29,9 +29,22 @@ function Footer() {
           }}
         >
           {" "}
-          Terms and Conditions
+          TERMS AND CONDITIONS
         </Link>
       </p>
+      <div className="logo">{/* <img src={logo} alt="logo" /> */}</div>
+      {/* <div className="footer-social">
+        <div>
+          <li>Facebook</li>
+          <li>Youtube</li>
+          <li> Instagram</li>
+        </div>
+        <div>
+          <li>Twitter</li>
+          <li>LinkedIn</li>
+        </div>
+        <div></div>
+      </div> */}
     </div>
   );
 }

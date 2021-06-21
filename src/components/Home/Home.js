@@ -5,12 +5,12 @@ import "./Home.css";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import YouTubeIcon from "@material-ui/icons/YouTube";
-import IconButton from "@material-ui/core/IconButton";
+// import FacebookIcon from "@material-ui/icons/Facebook";
+// import InstagramIcon from "@material-ui/icons/Instagram";
+// import TwitterIcon from "@material-ui/icons/Twitter";
+// import LinkedInIcon from "@material-ui/icons/LinkedIn";
+// import YouTubeIcon from "@material-ui/icons/YouTube";
+// import IconButton from "@material-ui/core/IconButton";
 import Loading from "../Loading/Loading";
 
 const About = lazy(() => import("../About/About"));
@@ -72,59 +72,15 @@ function Home() {
               </a>
             </div>
             <div className="feedbackFormContainer_phone">
-              <a href="tel:9870233978">
+              <a href="tel:9821782988">
                 <PhoneIcon />
-                <p>9870233978</p>
+                <p>+91 982-178-2988</p>
               </a>
             </div>
             <div className="feedbackFormContainer_email">
               <a href="mailto:ngocewa@gmail.com">
                 <EmailIcon />
                 <p>ngocewa@gmail.com</p>
-              </a>
-            </div>
-
-            <div className="feedbackFormContainer_social">
-              <a
-                href="https://www.facebook.com/cewa.ngo.37?epa=SEARCH_BOX"
-                target="_blank"
-              >
-                <IconButton>
-                  <FacebookIcon />
-                </IconButton>
-              </a>
-
-              <a href="https://twitter.com/NgoCewa" target="_blank">
-                <IconButton>
-                  <TwitterIcon />
-                </IconButton>
-              </a>
-
-              <a
-                href="https://www.instagram.com/_cewa_foundation_/"
-                target="_blank"
-              >
-                <IconButton>
-                  <InstagramIcon />
-                </IconButton>
-              </a>
-
-              <a
-                href="https://www.linkedin.com/company/cewa-foundation/"
-                target="_blank"
-              >
-                <IconButton>
-                  <LinkedInIcon />
-                </IconButton>
-              </a>
-
-              <a
-                href="https://www.youtube.com/channel/UCqlu42Q07WeEzaGevsouB_w"
-                target="_blank"
-              >
-                <IconButton>
-                  <YouTubeIcon />
-                </IconButton>
               </a>
             </div>
           </div>

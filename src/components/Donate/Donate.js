@@ -4,7 +4,9 @@ import Axios from "axios";
 import "./Donate.css";
 import Loading from "../Loading/Loading";
 import ThankYou from "../ThankYou/ThankYou";
-const Donate = () => {
+import { withRouter } from "react-router-dom";
+const Donate = (props) => {
+  const user_id = props.location?.pathname?.split("/")[2] || "";
   /**states */
   const [loading, setloading] = useState(false);
   const [success, setsuccess] = useState(false);
@@ -33,6 +35,7 @@ const Donate = () => {
     await Axios.post("https://still-sea-99702.herokuapp.com/donate/orders", {
       amount: amount,
       name: name,
+      member_id: "123",
     }).then((res) => {
       // console.log(res);
       setorder_id(res.data.orders.id);
@@ -42,6 +45,7 @@ const Donate = () => {
         key: process.env.KEY_ID || `rzp_live_hSBgOn0UmEjq7i`,
         amount: amount * 100, // 2000 paise = INR 20, amount in paisa
         name: name,
+        meber_id: "123",
         description: "CEWA NGO Donation",
         order_id: order_id,
         handler: async function (response) {
@@ -52,6 +56,9 @@ const Donate = () => {
             transaction_id: response.razorpay_payment_id,
             transaction_amount: amount,
             transaction_author: name,
+            member_id: user_id,
+            email: email,
+            phone: contact,
           };
           await Axios.post(
             `https://still-sea-99702.herokuapp.com/donate/capture/${values.transaction_id}`,
@@ -97,7 +104,7 @@ const Donate = () => {
       setemail("");
       setcontact("");
       setaddress("");
-      setorder_id("");
+      setorder_id("123");
     });
   };
 
@@ -185,4 +192,4 @@ const Donate = () => {
     </div>
   );
 };
-export default Donate;
+export default withRouter(Donate);
